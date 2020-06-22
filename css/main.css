@@ -1,0 +1,89 @@
+#info-container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#info-container .content-view {
+    display: -webkit-flex;
+    width: 100%;
+    height: 90%;
+}
+
+#info-container .content-list,
+#info-container .content-info {
+    position: relative;
+    top: 5%;
+    width: 50%;
+    height: 100%;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+#info-container .content-list {
+    flex-direction: row;
+    overflow: scroll;
+}
+
+#info-container .content-info {
+    flex-direction: column;
+    padding: 10px 0 0 10px;
+}
+
+#info-container .content-info > div {
+    padding-bottom: 10px;
+}
+
+#info-container .content-list .content-name > div,
+#info-container .content-list .content-type > div {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1.3vmax;
+    transition: 200ms all ease-in;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#info-container .content-list .content-name > div {
+    color: #1428a0;
+}
+
+#info-container .content-list .content-type > div {
+    color: rgb(184, 160, 160);
+}
+
+#info-container .content-list .content-name > div.selected {
+    background-color: #5f70cf;
+    color: #fff;
+}
+
+#info-container .content-list .content-name > div:hover,
+#info-container .content-list .content-name > div.active,
+#info-container .content-list .content-name > div:focus {
+    background-color: #1428a0;
+    color: #fff;
+    outline: 0;
+}
+
+#info-container .content-path {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgb(215, 201, 201);
+}
+
+#info-container .content-list .content-name,
+#info-container .content-list .content-type {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid rgb(215, 201, 201);
+}

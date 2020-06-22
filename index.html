@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=1920, height=1080" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <title>Filesystem</title>
+    <script src="$WEBAPIS/webapis/webapis.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="appName">Filesystem</h1>
+        <h2 class="appVersion">2.0</h2>
+        <div class="tvInfo">
+            <p class="firmware"></p>
+            <p class="model"></p>
+        </div>
+    </header>
+    <section class="main">
+        <section id="info-container">
+            <div class="content-path"></div>
+            <div class="content-view">
+                <div class="content-list">
+                    <div class="content-name"></div>
+                    <div class="content-type"></div>
+                </div>
+                <div class="content-info"></div>
+            </div>
+        </section>
+
+    </section>
+    <section class="logs">
+        <h2>Logs:</h2>
+        <div data-list-item class="logsContainer">
+
+        </div>
+    </section>
+    <section class="info">
+        <section class="info-container">
+            <h2>Info</h2>
+
+            <p>This application presents a small fraction of what FileSystem API can do.</p>
+        </section>
+    </section>
+    <section class="buttons" id="buttons">
+
+        <button data-list-item class="toggle-info">Show/hide info</button>
+    </section>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/keyhandler.js"></script>
+    <script src="./js/logger.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/init.js"></script>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
